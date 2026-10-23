@@ -63,7 +63,7 @@ function createPhotoMarkup(sister, className = "") {
         src="${image}"
         alt="Photograph of ${name}"
         loading="lazy"
-        onerror="this.classList.add('is-broken'); this.nextElementSibling.hidden = false;"
+        onerror="this.classList.add('is-broken'); const fb = this.nextElementSibling; if (fb) { fb.classList.add('is-visible'); fb.removeAttribute('hidden'); }"
       />
       <div class="photo-fallback" hidden aria-hidden="true">
         ${name}
