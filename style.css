@@ -551,12 +551,12 @@ a {
 }
 
 .music-gate-hint {
-  margin-top: 0.65rem;
-  font-size: clamp(2rem, 5.5vw, 2.65rem);
+  margin-top: 0.55rem;
+  font-size: clamp(1.45rem, 3.5vw, 1.8rem);
   color: var(--text-soft);
   font-family: var(--font-script);
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 @keyframes softPulse {
