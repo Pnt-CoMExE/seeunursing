@@ -550,16 +550,9 @@ a {
   line-height: 1.25;
 }
 
-.music-gate-text {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-top: 0.45rem;
-  line-height: 1.45;
-}
-
 .music-gate-hint {
-  font-size: 1.25rem;
+  margin-top: 0.55rem;
+  font-size: 1.55rem;
   color: var(--text-soft);
   font-family: var(--font-script);
   font-weight: 500;
