@@ -3,18 +3,18 @@
    ============================================ */
 
 :root {
-  --cream: #fff8f4;
-  --blush: #ffe8f0;
-  --pink: #f7d5e4;
-  --lavender: #ebe3f8;
-  --butter: #f8edcf;
-  --sage: #e4efe6;
-  --text: #8a7380;
-  --text-soft: #b39aaa;
-  --white: #fffcfb;
-  --border: rgba(176, 148, 162, 0.16);
-  --shadow: 0 18px 40px rgba(176, 148, 162, 0.1);
-  --shadow-soft: 0 10px 24px rgba(176, 148, 162, 0.08);
+  --cream: #f3e6df;
+  --blush: #f0d4df;
+  --pink: #e8c4d4;
+  --lavender: #d9d0ea;
+  --butter: #e8d9b0;
+  --sage: #d0e0d3;
+  --text: #6f5a64;
+  --text-soft: #947e8a;
+  --white: #f7eee9;
+  --border: rgba(111, 90, 100, 0.16);
+  --shadow: 0 18px 40px rgba(95, 72, 82, 0.12);
+  --shadow-soft: 0 10px 24px rgba(95, 72, 82, 0.1);
   --radius: 28px;
   --radius-sm: 18px;
   --font-display: "Fredoka", "Nunito", sans-serif;
@@ -61,24 +61,24 @@ a {
   color: inherit;
 }
 
-/* Soft pastel atmosphere — minimal, airy */
+/* Soft pastel atmosphere — warmer, less bright */
 .page-bg {
   position: fixed;
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(ellipse 70% 45% at 12% 8%, rgba(255, 214, 230, 0.55), transparent 60%),
-    radial-gradient(ellipse 55% 40% at 88% 12%, rgba(230, 220, 250, 0.45), transparent 58%),
-    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(255, 236, 200, 0.35), transparent 55%),
-    linear-gradient(180deg, #fff8f4 0%, #fff4ef 50%, #faf0ea 100%);
+    radial-gradient(ellipse 70% 45% at 12% 8%, rgba(232, 180, 200, 0.42), transparent 60%),
+    radial-gradient(ellipse 55% 40% at 88% 12%, rgba(196, 184, 220, 0.36), transparent 58%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(220, 196, 150, 0.28), transparent 55%),
+    linear-gradient(180deg, #efe0d8 0%, #ead6ce 48%, #e4cfc6 100%);
 }
 
 .page-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.18;
-  background-image: radial-gradient(rgba(176, 148, 162, 0.12) 0.7px, transparent 0.7px);
+  opacity: 0.22;
+  background-image: radial-gradient(rgba(111, 90, 100, 0.14) 0.7px, transparent 0.7px);
   background-size: 22px 22px;
   pointer-events: none;
 }
@@ -123,12 +123,12 @@ a {
   }
 }
 
-/* Airy scrapbook frame */
+/* Soft scrapbook frame */
 .frame {
   width: min(960px, calc(100% - 2.5rem));
   margin: 3rem auto 3.5rem;
   padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1.5rem, 4vw, 3.25rem);
-  background: rgba(255, 252, 251, 0.78);
+  background: rgba(247, 236, 230, 0.88);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -142,7 +142,7 @@ a {
   content: "";
   position: absolute;
   inset: 14px;
-  border: 1px solid rgba(247, 213, 228, 0.45);
+  border: 1px solid rgba(214, 176, 190, 0.35);
   border-radius: calc(var(--radius) - 10px);
   pointer-events: none;
 }
@@ -197,7 +197,7 @@ a {
 .brand em {
   font-style: normal;
   font-weight: 500;
-  color: #d492ab;
+  color: #c07a94;
 }
 
 .home-tagline {
@@ -342,7 +342,7 @@ a {
   text-align: center;
   margin-top: 0.75rem;
   padding-top: 1.75rem;
-  border-top: 1px solid rgba(247, 213, 228, 0.55);
+  border-top: 1px solid rgba(200, 160, 175, 0.4);
 }
 
 .home-decor p {
@@ -359,8 +359,8 @@ a {
   gap: 1rem;
   margin-bottom: 0.35rem;
   font-size: 1.05rem;
-  opacity: 0.4;
-  color: #d492ab;
+  opacity: 0.45;
+  color: #c07a94;
 }
 
 .home-footer,
@@ -456,15 +456,15 @@ a {
   justify-content: center;
   gap: 0.85rem;
   margin-bottom: 1rem;
-  opacity: 0.4;
+  opacity: 0.45;
   font-size: 1.05rem;
-  color: #d492ab;
+  color: #c07a94;
 }
 
 .message-card {
   text-align: left;
-  background: color-mix(in srgb, var(--accent) 42%, white);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: color-mix(in srgb, var(--accent) 55%, #f3e6df);
+  border: 1px solid rgba(247, 238, 233, 0.75);
   border-radius: var(--radius-sm);
   padding: 1.5rem 1.55rem;
   box-shadow: var(--shadow-soft);
@@ -507,7 +507,7 @@ a {
   display: grid;
   place-items: center;
   padding: 1.25rem;
-  background: rgba(255, 248, 244, 0.78);
+  background: rgba(228, 208, 198, 0.72);
   backdrop-filter: blur(12px);
 }
 
@@ -519,7 +519,7 @@ a {
   width: min(400px, 100%);
   padding: 2.4rem 1.75rem 2.1rem;
   border-radius: var(--radius);
-  background: rgba(255, 252, 251, 0.96);
+  background: rgba(247, 236, 230, 0.96);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   display: flex;
@@ -533,12 +533,12 @@ a {
 
 .music-gate-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(176, 148, 162, 0.14);
+  box-shadow: 0 20px 40px rgba(95, 72, 82, 0.14);
 }
 
 .music-gate-heart {
   font-size: 2rem;
-  color: #f0b4c8;
+  color: #d492ab;
   margin-bottom: 0.4rem;
   animation: softPulse 2.2s ease-in-out infinite;
 }
@@ -586,7 +586,7 @@ a {
   width: 3.25rem;
   height: 3.25rem;
   border-radius: 999px;
-  background: rgba(255, 252, 251, 0.94);
+  background: rgba(247, 236, 230, 0.95);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-soft);
   color: var(--text);
@@ -598,7 +598,7 @@ a {
 .music-toggle:hover {
   transform: translateY(-2px);
   background: var(--blush);
-  box-shadow: 0 12px 24px rgba(176, 148, 162, 0.12);
+  box-shadow: 0 12px 24px rgba(95, 72, 82, 0.12);
 }
 
 .music-toggle:focus-visible {
