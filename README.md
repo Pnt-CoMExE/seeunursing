@@ -4,17 +4,39 @@ A soft pastel scrapbook website — a personal gift from a big brother to his th
 
 Built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no backend, no login.
 
-## Run locally
+Works locally and on **GitHub Pages**.
 
-Open a terminal in this folder and start a simple static server:
+## Run locally
 
 ```bash
 python3 -m http.server 3847
 ```
 
-Then open [http://127.0.0.1:3847](http://127.0.0.1:3847).
+Open [http://127.0.0.1:3847](http://127.0.0.1:3847).
 
-You can also open `index.html` directly in a browser, but a local server is recommended so images and routing behave consistently.
+On first visit, tap the soft card to open the scrapbook and start the cute background music. Use the ♪ button (bottom-right) to mute/unmute.
+
+## Deploy to GitHub Pages
+
+This project is already GitHub Pages–ready:
+
+- Static files only (`index.html`, CSS, JS, images, audio)
+- Relative asset paths (no leading `/`)
+- Hash routing (`#mod`, `#nok`, `#tukta`) — no server rewrite needed
+- `.nojekyll` included so GitHub won’t process the site with Jekyll
+
+### Steps
+
+1. Push this repo to GitHub.
+2. Open the repo → **Settings** → **Pages**.
+3. Under **Build and deployment**:
+   - Source: **Deploy from a branch**
+   - Branch: `main` (or your default branch)
+   - Folder: `/ (root)`
+4. Save, wait a minute, then open the Pages URL, for example:
+   - `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
+If the site is in a project repo (not `username.github.io`), the relative paths still work because CSS, JS, images, and audio are loaded next to `index.html`.
 
 ## Project structure
 
@@ -23,6 +45,9 @@ You can also open `index.html` directly in a browser, but a local server is reco
 ├── style.css
 ├── script.js
 ├── README.md
+├── .nojekyll
+├── audio/
+│   └── bgm.mp3
 └── images/
     ├── mod.jpg
     ├── nok.jpg
@@ -36,11 +61,9 @@ You can also open `index.html` directly in a browser, but a local server is reco
    - `images/mod.jpg`
    - `images/nok.jpg`
    - `images/tukta.jpg`
-3. Refresh the page.
+3. Refresh the page (or push again if using GitHub Pages).
 
 If a photo file is missing or broken, a gentle pastel placeholder appears instead of a broken image icon.
-
-You can also change the path in `script.js` inside the `sisters` config if you prefer different filenames.
 
 ## Edit personal messages
 
@@ -60,7 +83,19 @@ const sisters = [
 ];
 ```
 
-Change `message`, `subtitle`, `name`, `image`, or `color` there — the homepage and profile pages update automatically.
+## Change the background music
+
+Replace `audio/bgm.mp3` with your own cute track (MP3 recommended).
+
+Optional volume / path settings in `script.js`:
+
+```javascript
+const musicConfig = {
+  src: "audio/bgm.mp3",
+  volume: 0.38,
+  storageKey: "see-you-again-music-muted",
+};
+```
 
 ## Customize more
 
@@ -74,6 +109,6 @@ Change `message`, `subtitle`, `name`, `image`, or `color` there — the homepage
 
 - Cream scrapbook frame with Polaroid-style photos
 - Soft pink primary accent; Mod pink, Nok lavender, Tukta butter yellow
-- Gentle fade transitions and floating hearts/flowers
+- Gentle fade transitions, floating hearts/flowers, and soft music-box BGM
 - Respects `prefers-reduced-motion`
 - Responsive: three cards in a row on desktop, stacked on mobile

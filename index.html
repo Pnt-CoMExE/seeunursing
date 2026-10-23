@@ -20,9 +20,31 @@
     <div class="page-bg" aria-hidden="true"></div>
     <div class="floaters" id="floaters" aria-hidden="true"></div>
 
+    <div id="music-gate" class="music-gate" hidden>
+      <button type="button" class="music-gate-card" id="music-gate-btn">
+        <span class="music-gate-heart" aria-hidden="true">♡</span>
+        <span class="music-gate-title">See you again Nursing</span>
+        <span class="music-gate-text">แตะเพื่อเปิดสคราปบุ๊ค พร้อมเพลงน่ารักๆ</span>
+        <span class="music-gate-hint">Tap to open with soft music</span>
+      </button>
+    </div>
+
     <main class="frame" id="app">
       <!-- Views are rendered by script.js -->
     </main>
+
+    <button
+      type="button"
+      class="music-toggle"
+      id="music-toggle"
+      aria-label="Toggle background music"
+      aria-pressed="false"
+      title="Music"
+    >
+      <span class="music-toggle-icon" aria-hidden="true">♪</span>
+    </button>
+
+    <audio id="bg-music" src="audio/bgm.mp3" loop preload="auto" playsinline></audio>
 
     <script src="script.js"></script>
   </body>

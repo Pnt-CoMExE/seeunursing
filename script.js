@@ -1,6 +1,9 @@
 /**
  * See you again Nursing
  * Edit the sisters array below to update names, photos, colors, and messages.
+ *
+ * GitHub Pages: keep all asset paths relative (no leading "/").
+ * Replace audio/bgm.mp3 anytime to change the background music.
  */
 
 const sisters = [
@@ -37,11 +40,24 @@ const FOOTER_TEXT = "Made with love by your big brother ♡";
 const HOME_TITLE = "See you again Nursing";
 const HOME_TAGLINE = "A little scrapbook for three precious sisters in faith";
 
+/** Background music — path is relative so it works on GitHub Pages too */
+const musicConfig = {
+  src: "audio/bgm.mp3",
+  volume: 0.38,
+  storageKey: "see-you-again-music-muted",
+};
+
 const app = document.getElementById("app");
 const floaters = document.getElementById("floaters");
+const audioEl = document.getElementById("bg-music");
+const musicToggle = document.getElementById("music-toggle");
+const musicGate = document.getElementById("music-gate");
+const musicGateBtn = document.getElementById("music-gate-btn");
 
 let currentView = "home";
 let isTransitioning = false;
+let musicReady = false;
+let userWantsMusic = true;
 
 function escapeHtml(value) {
   return String(value)
@@ -252,5 +268,127 @@ window.addEventListener("popstate", () => {
   routeFromHash();
 });
 
+function isMusicMutedStored() {
+  try {
+    return localStorage.getItem(musicConfig.storageKey) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function setMusicMutedStored(muted) {
+  try {
+    localStorage.setItem(musicConfig.storageKey, muted ? "1" : "0");
+  } catch {
+    /* ignore private mode */
+  }
+}
+
+function updateMusicToggleUi(isPlaying) {
+  if (!musicToggle) return;
+  musicToggle.classList.toggle("is-playing", isPlaying);
+  musicToggle.classList.toggle("is-muted", !isPlaying);
+  musicToggle.setAttribute("aria-pressed", isPlaying ? "true" : "false");
+  musicToggle.setAttribute(
+    "aria-label",
+    isPlaying ? "Mute background music" : "Play background music"
+  );
+  musicToggle.title = isPlaying ? "Mute music" : "Play music";
+}
+
+async function playMusic() {
+  if (!audioEl || !userWantsMusic) return false;
+  try {
+    audioEl.volume = musicConfig.volume;
+    await audioEl.play();
+    updateMusicToggleUi(true);
+    return true;
+  } catch {
+    updateMusicToggleUi(false);
+    return false;
+  }
+}
+
+function pauseMusic() {
+  if (!audioEl) return;
+  audioEl.pause();
+  updateMusicToggleUi(false);
+}
+
+async function unlockMusicFromGesture() {
+  if (musicReady) return;
+  musicReady = true;
+  if (musicGate) musicGate.hidden = true;
+  document.body.classList.add("is-unlocked");
+
+  if (isMusicMutedStored()) {
+    userWantsMusic = false;
+    pauseMusic();
+    return;
+  }
+
+  userWantsMusic = true;
+  await playMusic();
+}
+
+function setupMusic() {
+  if (!audioEl) return;
+
+  if (musicConfig.src && audioEl.getAttribute("src") !== musicConfig.src) {
+    audioEl.src = musicConfig.src;
+  }
+  audioEl.loop = true;
+  audioEl.preload = "auto";
+  audioEl.volume = musicConfig.volume;
+
+  if (isMusicMutedStored()) {
+    userWantsMusic = false;
+    updateMusicToggleUi(false);
+  } else {
+    updateMusicToggleUi(false);
+  }
+
+  // Browsers (and GitHub Pages visitors) block autoplay until a tap.
+  if (musicGate) {
+    musicGate.hidden = false;
+  }
+
+  if (musicGateBtn) {
+    musicGateBtn.addEventListener("click", () => {
+      unlockMusicFromGesture();
+    });
+  }
+
+  if (musicToggle) {
+    musicToggle.addEventListener("click", async () => {
+      if (!musicReady) {
+        userWantsMusic = true;
+        setMusicMutedStored(false);
+        await unlockMusicFromGesture();
+        return;
+      }
+
+      if (!audioEl.paused) {
+        userWantsMusic = false;
+        setMusicMutedStored(true);
+        pauseMusic();
+        return;
+      }
+
+      userWantsMusic = true;
+      setMusicMutedStored(false);
+      await playMusic();
+    });
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) return;
+    if (musicReady && userWantsMusic && audioEl.paused) {
+      playMusic();
+    }
+  });
+}
+
 createFloaters();
+setupMusic();
 routeFromHash();
