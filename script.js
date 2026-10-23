@@ -245,10 +245,8 @@ function createFloaters() {
   const symbols = [
     { char: "♡", type: "heart" },
     { char: "✿", type: "flower" },
-    { char: "❀", type: "flower" },
     { char: "♡", type: "heart" },
-    { char: "☘", type: "leaf" },
-    { char: "✿", type: "flower" },
+    { char: "❀", type: "flower" },
   ];
 
   floaters.innerHTML = symbols
