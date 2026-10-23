@@ -206,7 +206,7 @@ function bindViewEvents() {
 function openHome() {
   history.pushState({ view: "home" }, "", "#home");
   document.title = HOME_TITLE;
-  document.documentElement.style.setProperty("--accent", "#F8DDE8");
+  document.documentElement.style.setProperty("--accent", "#E8C4D4");
   showView(renderHome(), "home");
 }
 
@@ -224,7 +224,7 @@ function routeFromHash() {
   const hash = (location.hash || "#home").replace("#", "").toLowerCase();
   if (hash === "home" || hash === "") {
     document.title = HOME_TITLE;
-    document.documentElement.style.setProperty("--accent", "#F8DDE8");
+    document.documentElement.style.setProperty("--accent", "#E8C4D4");
     showView(renderHome(), "home");
     return;
   }
