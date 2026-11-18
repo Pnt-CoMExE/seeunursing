@@ -11,39 +11,54 @@ const sisters = [
     id: "mod",
     name: "Mod",
     image: "images/mod.jpg",
-    color: "#E8C4D4",
-    subtitle: "My little flower",
-    message: "Your personal message will be written here.",
-    tilt: -4,
+    color: "#b8929a",
+    subtitle: "เจ้ามด",
+    message: [
+      "ดีจ้า เจ้ามด!! ก่อนอื่นพี่ต้องขอโทษเราก่อนเลย เผื่อพี่เผลอแกล้งหรือเผลอทำอะไรไม่ดีใส่เรา ยกโทษให้พี่ด้วยนะ",
+      "แล้วยังไงบ้างกับการเป็นหัวหน้า Worship team สนุกมั้ย555555 สู้ต่อไปนะ ทั้งการเรียน การรับใช้ใน JDM รวมถึงการที่จะเป็นสาวพยาบาลในอนาคตด้วย พี่รู้สึกว่าเราไม่ค่อยได้คุยกันเลย พี่น่าจะกลัวเราด้วยแหละ555555",
+      "แต่พี่ก็ขอฝากเราช่วยดูแลเจ้าสุกี้หน่อย เพราะเทอมหน้าเจ้าสุกี้จะได้ขึ้นไปนำเพลงแล้ว และพี่ก็ไม่ค่อยได้สอนอะไรน้องมากเท่าไหร่ น้องอาจจะกดดันก็ได้ และก็ฝากดูลูกสาวพี่ทั้ง 3 คนด้วยนะ555555",
+      "พี่ก็ขอพระเจ้าทรงอวยพรและทรงเสริมกำลังเราในทุกๆทางที่เราจะไป สู้ๆ!!! เราทำได้ พี่จะคอยอธิษฐานเผื่อเราตลอดนะ แล้วเจอกันใหม่ พระเจ้าอวยพรครับ",
+    ],
+    tilt: -2.5,
   },
   {
     id: "nok",
     name: "Nok",
     image: "images/nok.jpg",
-    color: "#D9D0EA",
-    subtitle: "My little star",
-    message: "Your personal message will be written here.",
-    tilt: 2.5,
+    color: "#8f8aa3",
+    subtitle: "เจ้านก",
+    message: [
+      "ดีจ้า เจ้านก!! พี่รู้เราไม่ชอบฟังคำนี้จากพี่เท่าไหร่ แต่ว่าพี่ขอโทษนะ555555 โดยเฉพาะเรื่องที่พี่ลืมนัดเรา พี่ก็ยังคงรู้สึกผิดอยู่เสมอ แล้วก็เรื่องอื่นๆด้วยที่พี่อาจจะเผลอแกล้งหรือทำอะไรไม่ดีใส่เรา พี่ขอโทษจริงๆครับ อย่าพึ่งบล็อคพี่ล่ะ",
+      "แล้วก็สู้ต่อไปนะ ทั้งการรับใช้ใน JDM การเป็นหนึ่งใน Leader โดยเฉพาะการเรียนของเรา พี่อาจจะไม่เข้าใจเต็ม100%ว่าเราเรียนหนักขนาดไหน แต่ขึ้นชื่อว่าเรียนพยาบาลหลักสูตรภาษาอังกฤษก็คงจะยากแหละ",
+      "ยังไงพี่ก็ขอฝากเราช่วยดูแลลูกสาวพี่ทั้ง 3 คนด้วยนะ แต๊งกิ้วว และพี่ขอพระเจ้าทรงอวยพรและทรงเสริมกำลังเราในทุกๆย่างก้าวนะ อย่าลืมรักษาสุขภาพด้วยเจ้าเด็กป่วย พี่จะคอยอธิษฐานเผื่อเราตลอดนะ แล้วเจอกันใหม่ พระเจ้าอวยพรครับ",
+    ],
+    tilt: 1.8,
   },
   {
     id: "tukta",
     name: "Tukta",
     image: "images/tukta.jpg",
-    color: "#E8D9B0",
-    subtitle: "My little sunshine",
-    message: "Your personal message will be written here.",
-    tilt: -2,
+    color: "#b5a688",
+    subtitle: "เจ้าตุ๊กตา",
+    message: [
+      "ดีจ้า เจ้าตุ๊กตา!!! เป็นยังไงบ้างกับการที่ได้มาเชื่อพระเจ้าและได้เป็นหนึ่งใน Leader สนุกมั้ย55555 ก่อนอื่นพี่ก็ต้องขอโทษเราด้วย ที่พี่อาจจะเผลอทำอะไรไม่ดีใส่เรา ยกโทษให้พี่ด้วยนะ555555",
+      "และพี่ก็รู้สึกว่าเราไม่ค่อยได้คุยกันเลย จริงๆพี่อยากคุยกับเรามากกว่านี้ แต่พี่ก็ไม่รู้ว่าจะชวนเราคุยอะไรดี เอาเป็นว่าสู้ต่อไปนะ กับการเรียน การรับใช้ใน JDM และการที่เราจะติดสนิทกับพระเจ้าได้มากยิ่งขึ้น",
+      "ทางข้างหน้าของเราหลังจากนี้อาจจะเจออุปสรรคปัญหามากมาย แต่พี่เชื่อว่าเราจะผ่านมันไปได้แน่นอน ขอให้เราพึ่งพาพระเจ้า ติดสนิทกับพระเจ้าและทุกๆคนมากขึ้นไปอีกนะ พี่ขอบคุณพระเจ้านะที่เราได้มารู้จักกัน",
+      "ยังไงก็พี่ฝากเราช่วยดูแลลูกสาวพี่ทั้ง 3 คนด้วยนะ แต๊งกิ้วว และพี่ก็ขอพระเจ้าทรงอวยพรและทรงเสริมกำลังเราในทุกๆด้านนะ พี่จะคอยอธิษฐานเผื่อเราตลอดนะ แล้วเจอกันใหม่ พระเจ้าอวยพรครับ",
+    ],
+    tilt: -1.2,
   },
 ];
 
-const FOOTER_TEXT = "Made with love by your big brother ♡";
+const FOOTER_TEXT = "จากพี่ชาย · จากใจจริง";
 const HOME_TITLE = "See you again Nursing";
-const HOME_TAGLINE = "A little scrapbook for three precious sisters in faith";
+const HOME_TAGLINE = "อัลบั้มเล็กๆ สำหรับน้องสาวในความเชื่อสามคน";
+const MUSIC_CREDIT = "Music: Hymn by Scott Buckley (CC BY 4.0)";
 
 /** Background music — path is relative so it works on GitHub Pages too */
 const musicConfig = {
   src: "audio/bgm.mp3",
-  volume: 0.38,
+  volume: 0.32,
   storageKey: "see-you-again-music-muted",
 };
 
@@ -53,6 +68,9 @@ const audioEl = document.getElementById("bg-music");
 const musicToggle = document.getElementById("music-toggle");
 const musicGate = document.getElementById("music-gate");
 const musicGateBtn = document.getElementById("music-gate-btn");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
 
 let currentView = "home";
 let isTransitioning = false;
@@ -68,22 +86,33 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
-function createPhotoMarkup(sister, className = "") {
+function formatMessage(message) {
+  const parts = Array.isArray(message) ? message : [message];
+  return parts
+    .map((part) => `<p class="message-para">${escapeHtml(part)}</p>`)
+    .join("");
+}
+
+function createPhotoMarkup(sister, className = "", zoomable = false) {
   const name = escapeHtml(sister.name);
   const color = escapeHtml(sister.color);
   const image = escapeHtml(sister.image);
+  const zoomAttr = zoomable
+    ? `data-zoom-src="${image}" data-zoom-alt="รูปของ ${name}" role="button" tabindex="0" aria-label="ขยายรูป ${name}"`
+    : "";
 
   return `
-    <div class="polaroid-photo ${className}" style="--accent: ${color}">
+    <div class="polaroid-photo ${className}${zoomable ? " is-zoomable" : ""}" style="--accent: ${color}" ${zoomAttr}>
       <img
         src="${image}"
-        alt="Photograph of ${name}"
+        alt="รูปของ ${name}"
         loading="lazy"
+        decoding="async"
         onerror="this.classList.add('is-broken'); const fb = this.nextElementSibling; if (fb) { fb.classList.add('is-visible'); fb.removeAttribute('hidden'); }"
       />
       <div class="photo-fallback" hidden aria-hidden="true">
         ${name}
-        <span>photo coming soon</span>
+        <span>รอรูป</span>
       </div>
     </div>
   `;
@@ -94,17 +123,17 @@ function renderHome() {
     .map(
       (sister) => `
       <article class="sister-card" style="--accent: ${escapeHtml(sister.color)}">
-        <div class="polaroid" style="--tilt: ${sister.tilt}deg; --accent: ${escapeHtml(sister.color)}">
-          ${createPhotoMarkup(sister)}
-          <p class="polaroid-caption">${escapeHtml(sister.name)}</p>
-        </div>
         <button
           type="button"
-          class="sister-btn"
+          class="sister-open"
           data-open-sister="${escapeHtml(sister.id)}"
-          aria-label="Open ${escapeHtml(sister.name)}'s page"
+          aria-label="เปิดหน้าของ ${escapeHtml(sister.name)}"
         >
-          ${escapeHtml(sister.name)}
+          <div class="polaroid" style="--tilt: ${sister.tilt}deg; --accent: ${escapeHtml(sister.color)}">
+            ${createPhotoMarkup(sister)}
+            <p class="polaroid-caption">${escapeHtml(sister.name)}</p>
+            <p class="polaroid-sub">${escapeHtml(sister.subtitle)}</p>
+          </div>
         </button>
       </article>
     `
@@ -112,8 +141,9 @@ function renderHome() {
     .join("");
 
   return `
-    <section class="view home-view" aria-label="Homepage">
+    <section class="view home-view" aria-label="หน้าแรก">
       <header class="home-header">
+        <span class="brand-mark" aria-hidden="true"></span>
         <h1 class="brand">${escapeHtml(HOME_TITLE).replace("Nursing", "<em>Nursing</em>")}</h1>
         <p class="home-tagline">${escapeHtml(HOME_TAGLINE)}</p>
       </header>
@@ -123,11 +153,11 @@ function renderHome() {
       </div>
 
       <div class="home-decor" aria-hidden="true">
-        <div class="decor-row">✿ &nbsp; ♡ &nbsp; ✿</div>
-        <p>three hearts · one little universe</p>
+        <p>three sisters · one album</p>
       </div>
 
       <p class="home-footer">${escapeHtml(FOOTER_TEXT)}</p>
+      <p class="music-credit">${escapeHtml(MUSIC_CREDIT)}</p>
     </section>
   `;
 }
@@ -135,27 +165,30 @@ function renderHome() {
 function renderProfile(sister) {
   const name = escapeHtml(sister.name);
   const subtitle = escapeHtml(sister.subtitle);
-  const message = escapeHtml(sister.message);
   const color = escapeHtml(sister.color);
 
   return `
-    <section class="view profile" aria-label="${name}'s page" style="--accent: ${color}">
+    <section class="view profile" aria-label="หน้าของ ${name}" style="--accent: ${color}">
       <button type="button" class="back-btn" data-back-home>
-        ← back home
+        ← กลับหน้าแรก
       </button>
 
-      <div class="profile-polaroid" style="--accent: ${color}">
-        ${createPhotoMarkup(sister)}
+      <div class="profile-layout">
+        <div class="profile-aside">
+          <div class="profile-polaroid-wrap" style="--accent: ${color}">
+            <div class="profile-polaroid" style="--accent: ${color}">
+              ${createPhotoMarkup(sister, "", true)}
+            </div>
+          </div>
+          <h1 class="profile-name">${name}</h1>
+          <p class="profile-subtitle">${subtitle}</p>
+        </div>
+
+        <article class="message-card">
+          <p class="message-label">ข้อความจากพี่</p>
+          <div class="message-text">${formatMessage(sister.message)}</div>
+        </article>
       </div>
-
-      <div class="profile-decor" aria-hidden="true">♡ &nbsp; ✿ &nbsp; ♡</div>
-      <h1 class="profile-name">${name}</h1>
-      <p class="profile-subtitle">${subtitle}</p>
-
-      <article class="message-card">
-        <p class="message-label">A note for you</p>
-        <p class="message-text">${message}</p>
-      </article>
 
       <p class="profile-footer">${escapeHtml(FOOTER_TEXT)}</p>
     </section>
@@ -166,6 +199,10 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
+function scrollPageTop() {
+  window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
+}
+
 function showView(html, viewId) {
   if (isTransitioning) return;
   currentView = viewId;
@@ -173,6 +210,7 @@ function showView(html, viewId) {
   if (!app.firstElementChild || prefersReducedMotion()) {
     app.innerHTML = html;
     bindViewEvents();
+    scrollPageTop();
     return;
   }
 
@@ -186,7 +224,27 @@ function showView(html, viewId) {
     if (next) next.classList.add("is-entering");
     bindViewEvents();
     isTransitioning = false;
+    scrollPageTop();
   }, 260);
+}
+
+function openLightbox(src, alt) {
+  if (!lightbox || !lightboxImg || !src) return;
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || "";
+  lightbox.hidden = false;
+  document.body.classList.add("lightbox-open");
+  lightboxClose?.focus();
+}
+
+function closeLightbox() {
+  if (!lightbox || lightbox.hidden) return;
+  lightbox.hidden = true;
+  document.body.classList.remove("lightbox-open");
+  if (lightboxImg) {
+    lightboxImg.removeAttribute("src");
+    lightboxImg.alt = "";
+  }
 }
 
 function bindViewEvents() {
@@ -201,12 +259,24 @@ function bindViewEvents() {
   if (back) {
     back.addEventListener("click", () => openHome());
   }
+
+  app.querySelectorAll("[data-zoom-src]").forEach((el) => {
+    const open = () =>
+      openLightbox(el.getAttribute("data-zoom-src"), el.getAttribute("data-zoom-alt"));
+    el.addEventListener("click", open);
+    el.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        open();
+      }
+    });
+  });
 }
 
 function openHome() {
   history.pushState({ view: "home" }, "", "#home");
   document.title = HOME_TITLE;
-  document.documentElement.style.setProperty("--accent", "#E8C4D4");
+  document.documentElement.style.setProperty("--accent", "#8f6a66");
   showView(renderHome(), "home");
 }
 
@@ -224,7 +294,7 @@ function routeFromHash() {
   const hash = (location.hash || "#home").replace("#", "").toLowerCase();
   if (hash === "home" || hash === "") {
     document.title = HOME_TITLE;
-    document.documentElement.style.setProperty("--accent", "#E8C4D4");
+    document.documentElement.style.setProperty("--accent", "#8f6a66");
     showView(renderHome(), "home");
     return;
   }
@@ -241,28 +311,11 @@ function routeFromHash() {
 }
 
 function createFloaters() {
-  if (!floaters) return;
-  const symbols = [
-    { char: "♡", type: "heart" },
-    { char: "✿", type: "flower" },
-    { char: "♡", type: "heart" },
-    { char: "❀", type: "flower" },
-  ];
-
-  floaters.innerHTML = symbols
-    .map((item, index) => {
-      const left = 8 + ((index * 17) % 84);
-      const top = 10 + ((index * 23) % 75);
-      const delay = index * 1.1;
-      const duration = 12 + (index % 4) * 2;
-      const size = 0.85 + (index % 3) * 0.2;
-
-      return `<span class="floater ${item.type}" style="left:${left}%;top:${top}%;animation-delay:${delay}s;animation-duration:${duration}s;font-size:${size}rem">${item.char}</span>`;
-    })
-    .join("");
+  if (floaters) floaters.innerHTML = "";
 }
 
 window.addEventListener("popstate", () => {
+  closeLightbox();
   routeFromHash();
 });
 
@@ -289,9 +342,9 @@ function updateMusicToggleUi(isPlaying) {
   musicToggle.setAttribute("aria-pressed", isPlaying ? "true" : "false");
   musicToggle.setAttribute(
     "aria-label",
-    isPlaying ? "Mute background music" : "Play background music"
+    isPlaying ? "ปิดเสียงเพลง" : "เปิดเสียงเพลง"
   );
-  musicToggle.title = isPlaying ? "Mute music" : "Play music";
+  musicToggle.title = isPlaying ? "ปิดเสียง" : "เปิดเสียง";
 }
 
 async function playMusic() {
@@ -313,20 +366,55 @@ function pauseMusic() {
   updateMusicToggleUi(false);
 }
 
+function finishUnlock() {
+  if (musicGate) {
+    musicGate.classList.remove("is-leaving");
+    musicGate.hidden = true;
+  }
+  document.body.classList.add("is-unlocked");
+}
+
+function wait(ms) {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
+
 async function unlockMusicFromGesture() {
   if (musicReady) return;
   musicReady = true;
-  if (musicGate) musicGate.hidden = true;
-  document.body.classList.add("is-unlocked");
+
+  const card = musicGateBtn;
 
   if (isMusicMutedStored()) {
     userWantsMusic = false;
     pauseMusic();
-    return;
+  } else {
+    userWantsMusic = true;
+    playMusic();
   }
 
-  userWantsMusic = true;
-  await playMusic();
+  if (musicGate && card) {
+    card.classList.remove("is-opening");
+    void card.offsetWidth;
+    card.classList.add("is-opening");
+
+    await wait(prefersReducedMotion() ? 450 : 850);
+    musicGate.classList.add("is-leaving");
+    await wait(prefersReducedMotion() ? 280 : 650);
+  }
+
+  finishUnlock();
+}
+
+function setupLightbox() {
+  if (!lightbox) return;
+
+  lightboxClose?.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeLightbox();
+  });
 }
 
 function setupMusic() {
@@ -346,7 +434,6 @@ function setupMusic() {
     updateMusicToggleUi(false);
   }
 
-  // Browsers (and GitHub Pages visitors) block autoplay until a tap.
   if (musicGate) {
     musicGate.hidden = false;
   }
@@ -388,5 +475,6 @@ function setupMusic() {
 }
 
 createFloaters();
+setupLightbox();
 setupMusic();
 routeFromHash();

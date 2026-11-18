@@ -14,7 +14,7 @@ python3 -m http.server 3847
 
 Open [http://127.0.0.1:3847](http://127.0.0.1:3847).
 
-On first visit, tap the soft card to open the scrapbook and start the cute background music. Use the ♪ button (bottom-right) to mute/unmute.
+On first visit, tap the soft card to open the scrapbook and start the piano background music. Use the ♪ button (bottom-right) to mute/unmute.
 
 ## Deploy to GitHub Pages
 
@@ -85,14 +85,22 @@ const sisters = [
 
 ## Change the background music
 
-Replace `audio/bgm.mp3` with your own cute track (MP3 recommended).
+Current default: solo piano — **Hymn** by [Scott Buckley](https://www.scottbuckley.com.au/library/hymn/) (CC BY 4.0).
+
+Required credit (keep this when the track is used):
+
+```text
+'Hymn' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
+```
+
+Replace `audio/bgm.mp3` with your own track anytime (MP3 recommended). If you change tracks, update the credit above.
 
 Optional volume / path settings in `script.js`:
 
 ```javascript
 const musicConfig = {
   src: "audio/bgm.mp3",
-  volume: 0.38,
+  volume: 0.32,
   storageKey: "see-you-again-music-muted",
 };
 ```
@@ -109,6 +117,6 @@ const musicConfig = {
 
 - Cream scrapbook frame with Polaroid-style photos
 - Soft pink primary accent; Mod pink, Nok lavender, Tukta butter yellow
-- Gentle fade transitions, floating hearts/flowers, and soft music-box BGM
+- Gentle fade transitions and soft piano hymn BGM
 - Respects `prefers-reduced-motion`
 - Responsive: three cards in a row on desktop, stacked on mobile

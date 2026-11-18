@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>See you again Nursing</title>
     <meta
       name="description"
-      content="A soft scrapbook gift for Mod, Nok, and Tukta — from your big brother."
+      content="อัลบั้มเล็กๆ สำหรับ Mod, Nok และ Tukta — จากพี่ชาย"
     />
+    <meta name="theme-color" content="#e3dbd0" />
+    <meta property="og:title" content="See you again Nursing" />
+    <meta
+      property="og:description"
+      content="อัลบั้มเล็กๆ สำหรับน้องสาวในความเชื่อสามคน"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23e3dbd0'/%3E%3Cpath d='M18 40 V24 h8.5c5 0 8 2.4 8 6.2 0 3.8-3 6.3-8 6.3H24v3.5H18zm6-8.8h2.2c2.2 0 3.5-1 3.5-2.6s-1.3-2.5-3.5-2.5H24v5.1zM36.5 40l6.2-16h6.6l6.2 16h-6.1l-1-2.8H43.6l-1 2.8h-6.1zm9.2-7.2h3.6l-1.8-5.2-1.8 5.2z' fill='%238f6a66'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,450;9..144,500&family=Noto+Sans+Thai:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=improve1" />
   </head>
   <body>
     <div class="page-bg" aria-hidden="true"></div>
@@ -22,9 +29,9 @@
 
     <div id="music-gate" class="music-gate" hidden>
       <button type="button" class="music-gate-card" id="music-gate-btn">
-        <span class="music-gate-heart" aria-hidden="true">♡</span>
+        <span class="music-gate-heart" aria-hidden="true"></span>
         <span class="music-gate-title">See you again Nursing</span>
-        <span class="music-gate-hint">Tap to open</span>
+        <span class="music-gate-hint">เปิดอัลบั้ม</span>
       </button>
     </div>
 
@@ -32,19 +39,26 @@
       <!-- Views are rendered by script.js -->
     </main>
 
+    <div id="lightbox" class="lightbox" hidden>
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="ปิดรูปขยาย">
+        ×
+      </button>
+      <img id="lightbox-img" class="lightbox-img" alt="" />
+    </div>
+
     <button
       type="button"
       class="music-toggle"
       id="music-toggle"
-      aria-label="Toggle background music"
+      aria-label="เปิดเสียงเพลง"
       aria-pressed="false"
-      title="Music"
+      title="เพลง"
     >
       <span class="music-toggle-icon" aria-hidden="true">♪</span>
     </button>
 
     <audio id="bg-music" src="audio/bgm.mp3" loop preload="auto" playsinline></audio>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=improve1"></script>
   </body>
 </html>
